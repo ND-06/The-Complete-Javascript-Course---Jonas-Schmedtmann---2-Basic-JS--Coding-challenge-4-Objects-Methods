@@ -38,14 +38,14 @@ var john = {
 mark.calcBmi();
 john.calcBmi();
 
-if (mark.bmi > john.bmi) {
+if (mark.calcBmi() > john.calcBmi()) {
   
   console.log(mark.firstName + ' ' + mark.lastName + ' has a ' + mark.bmi + ' BMI' + 
   ' ' + 'whereas ' + john.firstName + ' ' + john.lastName + ' ' + 'has a ' + john.bmi +
    ' BMI.' + ' So, ' + mark.firstName + ' ' + mark.lastName + ' ' + 'has an higher BMI than '
    + john.firstName + ' ' + john.lastName + '.'); 
   
-  } else if (mark.bmi < john.bmi) {
+  } else if (john.calcBmi() > mark.calcBmi()) {
   
   console.log(john.firstName + ' ' + john.lastName + ' has a ' + john.bmi + ' BMI' + 
   ' ' + 'whereas ' + mark.firstName + ' ' + mark.lastName + ' has a ' + mark.bmi + 
