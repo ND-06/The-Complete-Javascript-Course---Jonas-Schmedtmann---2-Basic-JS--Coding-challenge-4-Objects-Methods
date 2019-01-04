@@ -20,8 +20,9 @@ var mark = {
   height: 1.75,
   calcBmi: function() {
     this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
   }
-};
+}
 
 var john = {
   firstName: 'John',
@@ -30,8 +31,9 @@ var john = {
   height: 1.74,
   calcBmi: function() {
     this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
   }
-};
+}
 
 mark.calcBmi();
 john.calcBmi();
