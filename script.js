@@ -35,9 +35,6 @@ var john = {
   }
 }
 
-mark.calcBmi();
-john.calcBmi();
-
 if (mark.calcBmi() > john.calcBmi()) {
   
   console.log(mark.firstName + ' ' + mark.lastName + ' has a ' + mark.bmi + ' BMI' + 
